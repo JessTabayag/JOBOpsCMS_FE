@@ -12,8 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tickets', function (Blueprint $table) {
-            $table->text('name','department', 'unit', 'request', 'description', 'assignedstaff', 'status' );
-            // Add more columns as needed
+            $table->string('name');
+            $table->string('department');
+            $table->string('unit');
+            $table->string('request');
+            $table->string('description');
+            $table->string('assignedstaff');
+            $table->string('status');
+            
             $table->timestamps();
         });
     }

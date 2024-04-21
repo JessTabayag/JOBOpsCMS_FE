@@ -31,7 +31,7 @@
             <br>
             <div class="card-header">
               <div>
-                <button class="btn btn-primary" onclick="window.location.href='general.blade.php'"> Return to the ticket list </button>
+                <button class="btn btn-primary" onclick="window.location.href='index.blade.php'"> Return to the ticket list </button>
               </div>
               <!-- /.card-header -->
               <!-- form start -->

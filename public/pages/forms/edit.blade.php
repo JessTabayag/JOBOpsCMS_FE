@@ -29,22 +29,15 @@
           <br>
             <h1>My Ticket</h1>
             <br>
-            <div class="card-header">
-              <div>
-                <button class="btn btn-primary" onclick="window.location.href='general.blade.php'"> Return to the ticket list </button>
-              </div>
-              <!-- /.card-header -->
-              <!-- form start -->
-              
-            </div>
-            
+                      
               <!-- general form elements -->
 
               <div class="card card-primary">
                       
                 <div class="card-body">
                   
-                  <form action="" method="POST" enctype="multipart/form-data">
+                  <form action="{{ url ('ticket')}}" method="POST">
+                  
                     <div class="card-body">
                       <div class="form-group">
                         <label for="name">Name</label>
@@ -61,13 +54,6 @@
                             <option value="chs">CHS</option>
                           </select>
                       </div>
-                      <!--
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">Room</label>
-                            <input type="room" class="form-control" id="exampleInputRoom" placeholder="Room">
-                          </div>
-                      -->
-                        
                       <div class="form-group">
                         <label for="exampleInputUnit">Unit</label>
                           <select name="unit" id="unit">
@@ -102,7 +88,7 @@
                     <!-- /.card-body -->
     
                     <div class="card-footer">
-                      <button type="submit" class="btn btn-primary" onlick="add()">Create Ticket</button>
+                      <button type="submit" value="Save" class="btn btn-success">Save</button>
                     </div>
                   </form>
 
@@ -162,12 +148,6 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.2.0
-    </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

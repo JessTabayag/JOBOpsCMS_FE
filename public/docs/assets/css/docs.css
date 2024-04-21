@@ -50,3 +50,15 @@ input:checked + .slider::before {
 .slider.round::before {
   border-radius: 50%;
 }
+
+.create_form, .update_form {
+  display: none;
+}
+
+@media screen and (max-width: 400px){
+
+  .create_form input , .update_form input{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
